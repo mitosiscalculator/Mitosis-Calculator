@@ -14,12 +14,6 @@ body {margin: 30px;}
         document.getElementById("result").innerHTML = num1 / (2.5 * 3.14 * num2 * num2);
 }
 
-function divideBy() 
-{ 
-        num1 = document.getElementById("firstNumber").value;
-        num2 = document.getElementById("secondNumber").value;
-document.getElementById("result").innerHTML = num1 / num2;
-}
   </script>
 </head>
 <body>
@@ -27,7 +21,6 @@ document.getElementById("result").innerHTML = num1 / num2;
 Number of mitoses per 10 HPF : <input type="text" id="firstNumber" /><br>
 Your HPF Diameter in mm : <input type="text" id="secondNumber" /><br>
 <input type="button" onClick="multiplyBy()" Value="Calculate" />
-<input type="button" onClick="divideBy()" Value="Divide" />
 </form>
 <p>The number of mitoses per mm2 is : <br>
 <span id = "result"></span>
