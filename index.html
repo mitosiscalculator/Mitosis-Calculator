@@ -13,6 +13,13 @@ body {margin: 30px;}
         num2 = document.getElementById("secondNumber").value;
         document.getElementById("result").innerHTML = num1 / (2.5 * 3.14 * num2 * num2);
 }
+  
+    function multiplyBy2()
+{
+        num3 = document.getElementById("thirdNumber").value;
+        num4 = document.getElementById("fourthNumber").value;
+        document.getElementById("result").innerHTML = 2.5 * 3.14 * num3 * num4 * num4;
+}
 
   </script>
 </head>
@@ -23,7 +30,12 @@ Your HPF diameter in mm : <input type="text" id="secondNumber" /><br>
 <input type="button" onClick="multiplyBy()" Value="Calculate" />
 </form>
   <p>The number of mitoses per mm<sup>2</sup> is : <br>
-<span id = "result"></span>
+<span id = "result"></span><br><br>
+ <form>
+Number of mitoses per mm<sup>2</sup> : <input type="text" id="thirdNumber" /><br>
+Your HPF diameter in mm : <input type="text" id="fourthNumber" /><br>
+<input type="button" onClick="multiplyBy2()" Value="Calculate" />
+</form>
 </p>
 </body>
 </html>
