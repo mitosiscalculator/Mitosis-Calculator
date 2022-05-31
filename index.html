@@ -26,11 +26,11 @@ body {margin: 30px;}
 <body>
   <center>
     <font size = +4>
-      Mitotic Count Converter<p></font>
+      <i>Mitotic Count Converter</i><p></font>
     <font size = +2>
-      Calculate the number of <font color = blue>mitoses per mm<sup>2</sup></font> from a known number of <font color = red>mitoses per 10 HPFs</font color>:</font><p>
+      Calculate the number of <font color = blue>mitoses per mm<sup>2</sup></font> from a known number of <font color = red>mitoses per 10 high-power (40x) fields</font color>:</font><p>
 <form>
-  Number of <font color = red>mitoses per 10 HPF </font>: <input type="text" id="firstNumber" /><br>
+  <font color = red>Mitoses per 10 HPFs </font>: <input type="text" id="firstNumber" /><br>
 Your HPF diameter in mm : <input type="text" id="secondNumber" /><br>
 <input type="button" onClick="multiplyBy()" Value="Calculate" />
 </form>
@@ -39,7 +39,7 @@ Your HPF diameter in mm : <input type="text" id="secondNumber" /><br>
  <form>
        <font size = +2>
          Calculate the number of <font color = red>mitoses per 10 HPFs</font> from a known number of <font color = blue>mitoses per mm<sup>2</sup></font color>:</font><p>
-Number of <font color = blue>mitoses per mm<sup>2</sup></font> : <input type="text" id="thirdNumber" /><br>
+<font color = blue>Mitoses per mm<sup>2</sup></font> : <input type="text" id="thirdNumber" /><br>
 Your HPF diameter in mm : <input type="text" id="fourthNumber" /><br>
 <input type="button" onClick="multiplyBy2()" Value="Calculate" />
 </form>
