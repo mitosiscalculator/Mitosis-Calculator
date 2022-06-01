@@ -22,9 +22,7 @@ body {margin: 30px;}
 }
   function fun()
   {
-      document.getElementById("firstNumber").reset();  
-      document.getElementById("secondNumber").reset(); 
-      document.getElementById("result").reset(); 
+      document.getElementById("formForward").reset();  
  }   
 
   </script>
@@ -36,7 +34,7 @@ body {margin: 30px;}
       Mitotic Count Converter</font><p>
     <font size = +2>
       Calculate the number of <font color = #2B65EC>mitoses per mm<sup>2</sup></font> from a known number of <font color = #F67280>mitoses per 10 high-power (40x) fields</font color>:</font><p>
-<form>
+<form id = "formForward">
   <font color = #F67280>Mitoses per 10 HPFs </font>: <input type="text" id="firstNumber" /><br>
 Your HPF diameter in mm : <input type="text" id="secondNumber" /><br>
 <input type="button" onClick="multiplyBy()" Value="Calculate" />
